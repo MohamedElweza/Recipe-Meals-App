@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_recipe/database/helper.dart';
-import 'package:food_recipe/screens/home.dart';
+import 'package:food_recipe/screens/tabs_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -13,10 +13,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: TabsScreen(),
     );
   }
 }
-
